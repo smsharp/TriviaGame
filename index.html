@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
+
+  	<!-- JQuery -->
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  	<!-- adding javascript file -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  	<!-- CSS stylesheet -->
+  	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--font links-->
+  	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  	<!--viewport tag-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div class= "container">
+		
+		<!--logo and start button div-->
+		<div class="row match-my-cols" id="main">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<div class= "header"><h1>AGRIZEN <span id= "small-text">A Quiz On Best Agricultural Practices.</span></h1></div>
+
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<button class='btn btn-primary' id='startBtn'>Start <i class="fa fa-play-circle"></i></button>
+			</div>
+		</div>
+		
+		<!--tractor and logo text-->
+		<div class="row" id="tractor-image">
+		<img class="main-image" src="./assets/images/agrizen.png" alt="agrizen">
+		</div>
+		<div class="row" id="tractor-text">
+		<img class="main-image-text" src="./assets/images/agrizentext.png" alt="agrizentext">
+		</div>
+
+		<!--time clock-->
+		<h3 id="time-remaining">Time Remaining: <span class='timer'></span></h3>
+	
+		<!--question and choices-->
+		<div class="row" id="display"></div>
+
+		<!--final score and reset button-->
+		<div class="row" id ="content"></div>
+
+
+	</div><!--container div-->
+</body>
+</html>
